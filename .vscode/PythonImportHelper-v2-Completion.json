@@ -1,0 +1,433 @@
+[
+    {
+        "label": "APIRouter",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "APIRouter",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "APIRouter",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "FastAPI",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "FtpService",
+        "importPath": "app.services.ftp_service",
+        "description": "app.services.ftp_service",
+        "isExtraImport": true,
+        "detail": "app.services.ftp_service",
+        "documentation": {}
+    },
+    {
+        "label": "FtpService",
+        "importPath": "app.services.ftp_service",
+        "description": "app.services.ftp_service",
+        "isExtraImport": true,
+        "detail": "app.services.ftp_service",
+        "documentation": {}
+    },
+    {
+        "label": "TextoService",
+        "importPath": "app.services.texto_service",
+        "description": "app.services.texto_service",
+        "isExtraImport": true,
+        "detail": "app.services.texto_service",
+        "documentation": {}
+    },
+    {
+        "label": "MongoStorageService",
+        "importPath": "app.services.MongoStorageService",
+        "description": "app.services.MongoStorageService",
+        "isExtraImport": true,
+        "detail": "app.services.MongoStorageService",
+        "documentation": {}
+    },
+    {
+        "label": "MongoStorageService",
+        "importPath": "app.services.MongoStorageService",
+        "description": "app.services.MongoStorageService",
+        "isExtraImport": true,
+        "detail": "app.services.MongoStorageService",
+        "documentation": {}
+    },
+    {
+        "label": "MongoStorageService",
+        "importPath": "app.services.MongoStorageService",
+        "description": "app.services.MongoStorageService",
+        "isExtraImport": true,
+        "detail": "app.services.MongoStorageService",
+        "documentation": {}
+    },
+    {
+        "label": "OpenAIServices",
+        "importPath": "app.services.openIA_services",
+        "description": "app.services.openIA_services",
+        "isExtraImport": true,
+        "detail": "app.services.openIA_services",
+        "documentation": {}
+    },
+    {
+        "label": "OpenAIServices",
+        "importPath": "app.services.openIA_services",
+        "description": "app.services.openIA_services",
+        "isExtraImport": true,
+        "detail": "app.services.openIA_services",
+        "documentation": {}
+    },
+    {
+        "label": "time",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "time",
+        "description": "time",
+        "detail": "time",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "BaseModel",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "BaseModel",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "Any",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "status_controller",
+        "importPath": "app.controllers",
+        "description": "app.controllers",
+        "isExtraImport": true,
+        "detail": "app.controllers",
+        "documentation": {}
+    },
+    {
+        "label": "resumeAnalysis_controller",
+        "importPath": "app.controllers",
+        "description": "app.controllers",
+        "isExtraImport": true,
+        "detail": "app.controllers",
+        "documentation": {}
+    },
+    {
+        "label": "FTP",
+        "importPath": "ftplib",
+        "description": "ftplib",
+        "isExtraImport": true,
+        "detail": "ftplib",
+        "documentation": {}
+    },
+    {
+        "label": "load_dotenv",
+        "importPath": "dotenv",
+        "description": "dotenv",
+        "isExtraImport": true,
+        "detail": "dotenv",
+        "documentation": {}
+    },
+    {
+        "label": "load_dotenv",
+        "importPath": "dotenv",
+        "description": "dotenv",
+        "isExtraImport": true,
+        "detail": "dotenv",
+        "documentation": {}
+    },
+    {
+        "label": "load_dotenv",
+        "importPath": "dotenv",
+        "description": "dotenv",
+        "isExtraImport": true,
+        "detail": "dotenv",
+        "documentation": {}
+    },
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "MongoClient",
+        "importPath": "pymongo",
+        "description": "pymongo",
+        "isExtraImport": true,
+        "detail": "pymongo",
+        "documentation": {}
+    },
+    {
+        "label": "json",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "json",
+        "description": "json",
+        "detail": "json",
+        "documentation": {}
+    },
+    {
+        "label": "OpenAI",
+        "importPath": "openai",
+        "description": "openai",
+        "isExtraImport": true,
+        "detail": "openai",
+        "documentation": {}
+    },
+    {
+        "label": "diagnosis_IA",
+        "importPath": "app.models.diagnosis_IA",
+        "description": "app.models.diagnosis_IA",
+        "isExtraImport": true,
+        "detail": "app.models.diagnosis_IA",
+        "documentation": {}
+    },
+    {
+        "label": "diagnosis_IA",
+        "importPath": "app.models.diagnosis_IA",
+        "description": "app.models.diagnosis_IA",
+        "isExtraImport": true,
+        "detail": "app.models.diagnosis_IA",
+        "documentation": {}
+    },
+    {
+        "label": "fitz",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "fitz",
+        "description": "fitz",
+        "detail": "fitz",
+        "documentation": {}
+    },
+    {
+        "label": "BytesIO",
+        "importPath": "io",
+        "description": "io",
+        "isExtraImport": true,
+        "detail": "io",
+        "documentation": {}
+    },
+    {
+        "label": "status_routes",
+        "importPath": "app.routes",
+        "description": "app.routes",
+        "isExtraImport": true,
+        "detail": "app.routes",
+        "documentation": {}
+    },
+    {
+        "label": "get_ftp_docs",
+        "kind": 2,
+        "importPath": "app.controllers.resumeAnalysis_controller",
+        "description": "app.controllers.resumeAnalysis_controller",
+        "peekOfCode": "def get_ftp_docs():\n    ftp_service = FtpService()\n    try:\n        archivos = ftp_service.list_files('/hv')  # Se entra directamente en 'hv'\n        return {\"archivos\": archivos}\n    finally:\n        ftp_service.disconnect()\n@router.get(\"/ftp_texto_mongo\")\ndef text_for_mongo():\n    texto_service = TextoService()",
+        "detail": "app.controllers.resumeAnalysis_controller",
+        "documentation": {}
+    },
+    {
+        "label": "text_for_mongo",
+        "kind": 2,
+        "importPath": "app.controllers.resumeAnalysis_controller",
+        "description": "app.controllers.resumeAnalysis_controller",
+        "peekOfCode": "def text_for_mongo():\n    texto_service = TextoService()\n    return texto_service.read_files()\n@router.get(\"/analysis\")\ndef analysis_text_for_mongo():\n    texto_service = TextoService()\n    return texto_service.get_analisys_for_text_mongo()",
+        "detail": "app.controllers.resumeAnalysis_controller",
+        "documentation": {}
+    },
+    {
+        "label": "analysis_text_for_mongo",
+        "kind": 2,
+        "importPath": "app.controllers.resumeAnalysis_controller",
+        "description": "app.controllers.resumeAnalysis_controller",
+        "peekOfCode": "def analysis_text_for_mongo():\n    texto_service = TextoService()\n    return texto_service.get_analisys_for_text_mongo()",
+        "detail": "app.controllers.resumeAnalysis_controller",
+        "documentation": {}
+    },
+    {
+        "label": "ftp_service",
+        "kind": 5,
+        "importPath": "app.controllers.resumeAnalysis_controller",
+        "description": "app.controllers.resumeAnalysis_controller",
+        "peekOfCode": "ftp_service = FtpService()\ntexto_service = TextoService() \nrouter = APIRouter(prefix=\"/ftp\", tags=[\"ftp_process\"])\n@router.get(\"/getDocsftp\")\ndef get_ftp_docs():\n    ftp_service = FtpService()\n    try:\n        archivos = ftp_service.list_files('/hv')  # Se entra directamente en 'hv'\n        return {\"archivos\": archivos}\n    finally:",
+        "detail": "app.controllers.resumeAnalysis_controller",
+        "documentation": {}
+    },
+    {
+        "label": "texto_service",
+        "kind": 5,
+        "importPath": "app.controllers.resumeAnalysis_controller",
+        "description": "app.controllers.resumeAnalysis_controller",
+        "peekOfCode": "texto_service = TextoService() \nrouter = APIRouter(prefix=\"/ftp\", tags=[\"ftp_process\"])\n@router.get(\"/getDocsftp\")\ndef get_ftp_docs():\n    ftp_service = FtpService()\n    try:\n        archivos = ftp_service.list_files('/hv')  # Se entra directamente en 'hv'\n        return {\"archivos\": archivos}\n    finally:\n        ftp_service.disconnect()",
+        "detail": "app.controllers.resumeAnalysis_controller",
+        "documentation": {}
+    },
+    {
+        "label": "router",
+        "kind": 5,
+        "importPath": "app.controllers.resumeAnalysis_controller",
+        "description": "app.controllers.resumeAnalysis_controller",
+        "peekOfCode": "router = APIRouter(prefix=\"/ftp\", tags=[\"ftp_process\"])\n@router.get(\"/getDocsftp\")\ndef get_ftp_docs():\n    ftp_service = FtpService()\n    try:\n        archivos = ftp_service.list_files('/hv')  # Se entra directamente en 'hv'\n        return {\"archivos\": archivos}\n    finally:\n        ftp_service.disconnect()\n@router.get(\"/ftp_texto_mongo\")",
+        "detail": "app.controllers.resumeAnalysis_controller",
+        "documentation": {}
+    },
+    {
+        "label": "get_status",
+        "kind": 2,
+        "importPath": "app.controllers.status_controller",
+        "description": "app.controllers.status_controller",
+        "peekOfCode": "def get_status():\n    uptime = round(time.time() - start_time, 2)\n    return {\n        \"status\": \"success\",\n        \"message\": \"✅ API funcionando correctamente\",\n        \"version\": \"1.0.0\",\n        \"started_at\": start_datetime.strftime(\"%Y-%m-%d %H:%M:%S\"),\n        \"uptime_seconds\": uptime\n    }",
+        "detail": "app.controllers.status_controller",
+        "documentation": {}
+    },
+    {
+        "label": "start_time",
+        "kind": 5,
+        "importPath": "app.controllers.status_controller",
+        "description": "app.controllers.status_controller",
+        "peekOfCode": "start_time = time.time()\nstart_datetime = datetime.now()\nrouter = APIRouter()\n@router.get(\"/\", tags=[\"Health Check\"])\ndef get_status():\n    uptime = round(time.time() - start_time, 2)\n    return {\n        \"status\": \"success\",\n        \"message\": \"✅ API funcionando correctamente\",\n        \"version\": \"1.0.0\",",
+        "detail": "app.controllers.status_controller",
+        "documentation": {}
+    },
+    {
+        "label": "start_datetime",
+        "kind": 5,
+        "importPath": "app.controllers.status_controller",
+        "description": "app.controllers.status_controller",
+        "peekOfCode": "start_datetime = datetime.now()\nrouter = APIRouter()\n@router.get(\"/\", tags=[\"Health Check\"])\ndef get_status():\n    uptime = round(time.time() - start_time, 2)\n    return {\n        \"status\": \"success\",\n        \"message\": \"✅ API funcionando correctamente\",\n        \"version\": \"1.0.0\",\n        \"started_at\": start_datetime.strftime(\"%Y-%m-%d %H:%M:%S\"),",
+        "detail": "app.controllers.status_controller",
+        "documentation": {}
+    },
+    {
+        "label": "router",
+        "kind": 5,
+        "importPath": "app.controllers.status_controller",
+        "description": "app.controllers.status_controller",
+        "peekOfCode": "router = APIRouter()\n@router.get(\"/\", tags=[\"Health Check\"])\ndef get_status():\n    uptime = round(time.time() - start_time, 2)\n    return {\n        \"status\": \"success\",\n        \"message\": \"✅ API funcionando correctamente\",\n        \"version\": \"1.0.0\",\n        \"started_at\": start_datetime.strftime(\"%Y-%m-%d %H:%M:%S\"),\n        \"uptime_seconds\": uptime",
+        "detail": "app.controllers.status_controller",
+        "documentation": {}
+    },
+    {
+        "label": "diagnosis_IA",
+        "kind": 6,
+        "importPath": "app.models.diagnosis_IA",
+        "description": "app.models.diagnosis_IA",
+        "peekOfCode": "class diagnosis_IA(BaseModel):\n    resultado: str\n    resultado_json: Any",
+        "detail": "app.models.diagnosis_IA",
+        "documentation": {}
+    },
+    {
+        "label": "router",
+        "kind": 5,
+        "importPath": "app.routes.status_routes",
+        "description": "app.routes.status_routes",
+        "peekOfCode": "router = APIRouter()\nrouter.include_router(status_controller.router)\nrouter.include_router(resumeAnalysis_controller.router)",
+        "detail": "app.routes.status_routes",
+        "documentation": {}
+    },
+    {
+        "label": "FtpService",
+        "kind": 6,
+        "importPath": "app.services.ftp_service",
+        "description": "app.services.ftp_service",
+        "peekOfCode": "class FtpService():\n    def __init__(self):\n        load_dotenv()\n        self.ftp_host = os.getenv(\"FTP_HOST\")\n        self.ftp_user = os.getenv(\"FTP_USER\")\n        self.ftp_pass = os.getenv(\"FTP_PASS\")\n        self.ftp_port = int(os.getenv(\"FTP_PORT\", 99))\n        self.timeout = 15\n        self.ftp = None\n    def connect(self):",
+        "detail": "app.services.ftp_service",
+        "documentation": {}
+    },
+    {
+        "label": "MongoStorageService",
+        "kind": 6,
+        "importPath": "app.services.MongoStorageService",
+        "description": "app.services.MongoStorageService",
+        "peekOfCode": "class MongoStorageService:\n    def __init__(self):\n        load_dotenv()\n        MONGO_HOST = os.getenv(\"MONGO_HOST\")         # Ejemplo: \"mongodb://localhost:27017\"\n        MONGO_DB = os.getenv(\"DATABASE_MONGO\")             # Ejemplo: \"mi_base\"\n        self.client = MongoClient(MONGO_HOST)\n        self.db = self.client[MONGO_DB]\n        self.collection = self.db[\"hv_ftp\"]\n        self.analisys_hv_collection = self.db[\"analisys_hv\"]\n    def save_document(self, nombre: str, texto: str):",
+        "detail": "app.services.MongoStorageService",
+        "documentation": {}
+    },
+    {
+        "label": "OpenAIServices",
+        "kind": 6,
+        "importPath": "app.services.openIA_services",
+        "description": "app.services.openIA_services",
+        "peekOfCode": "class OpenAIServices:\n    def __init__(self):\n        load_dotenv()\n        self.client = OpenAI(api_key=os.getenv(\"OPENAI_API_KEY\"))\n    def get_completion(self,resumen:str):\n            response = self.client.chat.completions.create(\n                model=\"gpt-4.1-nano\",\n                messages=[\n                    {\"role\": \"system\", \"content\": \"Eres un experto en selección de personal de jazzplat Colombia para áreas comerciales de telecomunicaciones de Colombia.\"},\n                    {\"role\": \"user\", \"content\": self.promt_text(resumen)}",
+        "detail": "app.services.openIA_services",
+        "documentation": {}
+    },
+    {
+        "label": "TextoService",
+        "kind": 6,
+        "importPath": "app.services.texto_service",
+        "description": "app.services.texto_service",
+        "peekOfCode": "class TextoService:\n    def __init__(self):\n        self.ftp_service = FtpService()\n        self.mongo_service = MongoStorageService()\n        self.OpenAI_service = OpenAIServices()\n    def read_files(self):\n        resultados = []\n        self.ftp_service.connect()\n        try:\n            archivos = self.ftp_service.list_pdfs('/hv')",
+        "detail": "app.services.texto_service",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "kind": 5,
+        "importPath": "app.main",
+        "description": "app.main",
+        "peekOfCode": "app = FastAPI(\n    title=\"API de Análisis de Hojas de Vida\",\n    description=\"Conexión a MongoDB, FTP y análisis con OpenAI.\",\n    version=\"1.0.0\"\n)\napp.include_router(status_routes.router)",
+        "detail": "app.main",
+        "documentation": {}
+    },
+    {
+        "label": "crear_estructura",
+        "kind": 2,
+        "importPath": "crear_estructura",
+        "description": "crear_estructura",
+        "peekOfCode": "def crear_estructura():\n    base_dir = os.getcwd()\n    print(f\"Creando estructura en: {base_dir}/app\")\n    app_path = os.path.join(base_dir, \"app\")\n    # Crear carpeta principal app/\n    os.makedirs(app_path, exist_ok=True)\n    # Crear subcarpetas\n    for carpeta in estructura:\n        ruta = os.path.join(app_path, carpeta)\n        os.makedirs(ruta, exist_ok=True)",
+        "detail": "crear_estructura",
+        "documentation": {}
+    },
+    {
+        "label": "estructura",
+        "kind": 5,
+        "importPath": "crear_estructura",
+        "description": "crear_estructura",
+        "peekOfCode": "estructura = [\n    \"controllers\",\n    \"core\",\n    \"database\",\n    \"interfaces\",\n    \"models\",\n    \"repositories\",\n    \"routes\",\n    \"schemas\",\n    \"services\",",
+        "detail": "crear_estructura",
+        "documentation": {}
+    }
+]
