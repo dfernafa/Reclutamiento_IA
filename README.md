@@ -46,6 +46,12 @@ python -m venv env
   source env/bin/activate.bat
 ```
 
+### Desactivar Entorono virtual
+
+```bash
+ .\env\Scripts\deactivate
+```
+
 Verás algo como **(env)** al inicio de tu línea de comandos cuando esté activo.
 
 ## 📥3. Instalar dependencias
@@ -78,7 +84,7 @@ Script para crear estrucura de carpetas
     python crear_estructura.py
 ```
 
-## 📁  Estructura del proyecto
+## 📁 Estructura del proyecto
 
 ```bash
 fastapi/
