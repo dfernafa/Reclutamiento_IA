@@ -3,9 +3,11 @@ from app.services.ftp_service import FtpService
 from app.services.texto_service import TextoService 
 from app.services.MongoStorageService import MongoStorageService
 from app.services.openIA_services import OpenAIServices 
+from app.services.Sql_server import Sql_serverSql_server
 
 ftp_service = FtpService()
 texto_service = TextoService() 
+sqlconteciot = Sql_serverSql_server() 
 router = APIRouter(prefix="/ftp", tags=["ftp_process"])
 
 @router.get("/getDocsftp")
@@ -27,3 +29,7 @@ def analysis_text_for_mongo():
     texto_service = TextoService()
     return texto_service.get_analisys_for_text_mongo()
 
+@router.get("/sqlConnecet")
+def ConectionSql():
+    sqlconteciot = FtpService()
+    return sqlconteciot.connectICE()

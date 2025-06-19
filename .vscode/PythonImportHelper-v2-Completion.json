@@ -56,6 +56,14 @@
         "documentation": {}
     },
     {
+        "label": "TextoService",
+        "importPath": "app.services.texto_service",
+        "description": "app.services.texto_service",
+        "isExtraImport": true,
+        "detail": "app.services.texto_service",
+        "documentation": {}
+    },
+    {
         "label": "MongoStorageService",
         "importPath": "app.services.MongoStorageService",
         "description": "app.services.MongoStorageService",
@@ -93,6 +101,22 @@
         "description": "app.services.openIA_services",
         "isExtraImport": true,
         "detail": "app.services.openIA_services",
+        "documentation": {}
+    },
+    {
+        "label": "Sql_serverSql_server",
+        "importPath": "app.services.Sql_server",
+        "description": "app.services.Sql_server",
+        "isExtraImport": true,
+        "detail": "app.services.Sql_server",
+        "documentation": {}
+    },
+    {
+        "label": "Sql_serverSql_server",
+        "importPath": "app.services.Sql_server",
+        "description": "app.services.Sql_server",
+        "isExtraImport": true,
+        "detail": "app.services.Sql_server",
         "documentation": {}
     },
     {
@@ -185,6 +209,14 @@
         "documentation": {}
     },
     {
+        "label": "load_dotenv",
+        "importPath": "dotenv",
+        "description": "dotenv",
+        "isExtraImport": true,
+        "detail": "dotenv",
+        "documentation": {}
+    },
+    {
         "label": "os",
         "kind": 6,
         "isExtraImport": true,
@@ -199,6 +231,14 @@
         "description": "pymongo",
         "isExtraImport": true,
         "detail": "pymongo",
+        "documentation": {}
+    },
+    {
+        "label": "ObjectId",
+        "importPath": "bson",
+        "description": "bson",
+        "isExtraImport": true,
+        "detail": "bson",
         "documentation": {}
     },
     {
@@ -235,12 +275,12 @@
         "documentation": {}
     },
     {
-        "label": "fitz",
+        "label": "pyodbc",
         "kind": 6,
         "isExtraImport": true,
-        "importPath": "fitz",
-        "description": "fitz",
-        "detail": "fitz",
+        "importPath": "pyodbc",
+        "description": "pyodbc",
+        "detail": "pyodbc",
         "documentation": {}
     },
     {
@@ -252,6 +292,15 @@
         "documentation": {}
     },
     {
+        "label": "fitz",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "fitz",
+        "description": "fitz",
+        "detail": "fitz",
+        "documentation": {}
+    },
+    {
         "label": "status_routes",
         "importPath": "app.routes",
         "description": "app.routes",
@@ -260,11 +309,20 @@
         "documentation": {}
     },
     {
+        "label": "asyncio",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "asyncio",
+        "description": "asyncio",
+        "detail": "asyncio",
+        "documentation": {}
+    },
+    {
         "label": "get_ftp_docs",
         "kind": 2,
         "importPath": "app.controllers.resumeAnalysis_controller",
         "description": "app.controllers.resumeAnalysis_controller",
-        "peekOfCode": "def get_ftp_docs():\n    ftp_service = FtpService()\n    try:\n        archivos = ftp_service.list_files('/hv')  # Se entra directamente en 'hv'\n        return {\"archivos\": archivos}\n    finally:\n        ftp_service.disconnect()\n@router.get(\"/ftp_texto_mongo\")\ndef text_for_mongo():\n    texto_service = TextoService()",
+        "peekOfCode": "def get_ftp_docs():\n    ftp_service = FtpService()\n    try:\n        archivos = ftp_service.list_files('/HV')  # Se entra directamente en 'hv'\n        return {\"archivos\": archivos}\n    finally:\n        ftp_service.disconnect()\n@router.get(\"/ftp_texto_mongo\")\ndef text_for_mongo():\n    texto_service = TextoService()",
         "detail": "app.controllers.resumeAnalysis_controller",
         "documentation": {}
     },
@@ -273,7 +331,7 @@
         "kind": 2,
         "importPath": "app.controllers.resumeAnalysis_controller",
         "description": "app.controllers.resumeAnalysis_controller",
-        "peekOfCode": "def text_for_mongo():\n    texto_service = TextoService()\n    return texto_service.read_files()\n@router.get(\"/analysis\")\ndef analysis_text_for_mongo():\n    texto_service = TextoService()\n    return texto_service.get_analisys_for_text_mongo()",
+        "peekOfCode": "def text_for_mongo():\n    texto_service = TextoService()\n    return texto_service.read_files()\n@router.get(\"/analysis\")\ndef analysis_text_for_mongo():\n    texto_service = TextoService()\n    return texto_service.get_analisys_for_text_mongo()\n@router.get(\"/sqlConnecet\")\ndef ConectionSql():\n    sqlconteciot = FtpService()",
         "detail": "app.controllers.resumeAnalysis_controller",
         "documentation": {}
     },
@@ -282,7 +340,16 @@
         "kind": 2,
         "importPath": "app.controllers.resumeAnalysis_controller",
         "description": "app.controllers.resumeAnalysis_controller",
-        "peekOfCode": "def analysis_text_for_mongo():\n    texto_service = TextoService()\n    return texto_service.get_analisys_for_text_mongo()",
+        "peekOfCode": "def analysis_text_for_mongo():\n    texto_service = TextoService()\n    return texto_service.get_analisys_for_text_mongo()\n@router.get(\"/sqlConnecet\")\ndef ConectionSql():\n    sqlconteciot = FtpService()\n    return sqlconteciot.connectICE()",
+        "detail": "app.controllers.resumeAnalysis_controller",
+        "documentation": {}
+    },
+    {
+        "label": "ConectionSql",
+        "kind": 2,
+        "importPath": "app.controllers.resumeAnalysis_controller",
+        "description": "app.controllers.resumeAnalysis_controller",
+        "peekOfCode": "def ConectionSql():\n    sqlconteciot = FtpService()\n    return sqlconteciot.connectICE()",
         "detail": "app.controllers.resumeAnalysis_controller",
         "documentation": {}
     },
@@ -291,7 +358,7 @@
         "kind": 5,
         "importPath": "app.controllers.resumeAnalysis_controller",
         "description": "app.controllers.resumeAnalysis_controller",
-        "peekOfCode": "ftp_service = FtpService()\ntexto_service = TextoService() \nrouter = APIRouter(prefix=\"/ftp\", tags=[\"ftp_process\"])\n@router.get(\"/getDocsftp\")\ndef get_ftp_docs():\n    ftp_service = FtpService()\n    try:\n        archivos = ftp_service.list_files('/hv')  # Se entra directamente en 'hv'\n        return {\"archivos\": archivos}\n    finally:",
+        "peekOfCode": "ftp_service = FtpService()\ntexto_service = TextoService() \nsqlconteciot = Sql_serverSql_server() \nrouter = APIRouter(prefix=\"/ftp\", tags=[\"ftp_process\"])\n@router.get(\"/getDocsftp\")\ndef get_ftp_docs():\n    ftp_service = FtpService()\n    try:\n        archivos = ftp_service.list_files('/HV')  # Se entra directamente en 'hv'\n        return {\"archivos\": archivos}",
         "detail": "app.controllers.resumeAnalysis_controller",
         "documentation": {}
     },
@@ -300,7 +367,16 @@
         "kind": 5,
         "importPath": "app.controllers.resumeAnalysis_controller",
         "description": "app.controllers.resumeAnalysis_controller",
-        "peekOfCode": "texto_service = TextoService() \nrouter = APIRouter(prefix=\"/ftp\", tags=[\"ftp_process\"])\n@router.get(\"/getDocsftp\")\ndef get_ftp_docs():\n    ftp_service = FtpService()\n    try:\n        archivos = ftp_service.list_files('/hv')  # Se entra directamente en 'hv'\n        return {\"archivos\": archivos}\n    finally:\n        ftp_service.disconnect()",
+        "peekOfCode": "texto_service = TextoService() \nsqlconteciot = Sql_serverSql_server() \nrouter = APIRouter(prefix=\"/ftp\", tags=[\"ftp_process\"])\n@router.get(\"/getDocsftp\")\ndef get_ftp_docs():\n    ftp_service = FtpService()\n    try:\n        archivos = ftp_service.list_files('/HV')  # Se entra directamente en 'hv'\n        return {\"archivos\": archivos}\n    finally:",
+        "detail": "app.controllers.resumeAnalysis_controller",
+        "documentation": {}
+    },
+    {
+        "label": "sqlconteciot",
+        "kind": 5,
+        "importPath": "app.controllers.resumeAnalysis_controller",
+        "description": "app.controllers.resumeAnalysis_controller",
+        "peekOfCode": "sqlconteciot = Sql_serverSql_server() \nrouter = APIRouter(prefix=\"/ftp\", tags=[\"ftp_process\"])\n@router.get(\"/getDocsftp\")\ndef get_ftp_docs():\n    ftp_service = FtpService()\n    try:\n        archivos = ftp_service.list_files('/HV')  # Se entra directamente en 'hv'\n        return {\"archivos\": archivos}\n    finally:\n        ftp_service.disconnect()",
         "detail": "app.controllers.resumeAnalysis_controller",
         "documentation": {}
     },
@@ -309,7 +385,7 @@
         "kind": 5,
         "importPath": "app.controllers.resumeAnalysis_controller",
         "description": "app.controllers.resumeAnalysis_controller",
-        "peekOfCode": "router = APIRouter(prefix=\"/ftp\", tags=[\"ftp_process\"])\n@router.get(\"/getDocsftp\")\ndef get_ftp_docs():\n    ftp_service = FtpService()\n    try:\n        archivos = ftp_service.list_files('/hv')  # Se entra directamente en 'hv'\n        return {\"archivos\": archivos}\n    finally:\n        ftp_service.disconnect()\n@router.get(\"/ftp_texto_mongo\")",
+        "peekOfCode": "router = APIRouter(prefix=\"/ftp\", tags=[\"ftp_process\"])\n@router.get(\"/getDocsftp\")\ndef get_ftp_docs():\n    ftp_service = FtpService()\n    try:\n        archivos = ftp_service.list_files('/HV')  # Se entra directamente en 'hv'\n        return {\"archivos\": archivos}\n    finally:\n        ftp_service.disconnect()\n@router.get(\"/ftp_texto_mongo\")",
         "detail": "app.controllers.resumeAnalysis_controller",
         "documentation": {}
     },
@@ -372,7 +448,7 @@
         "kind": 6,
         "importPath": "app.services.ftp_service",
         "description": "app.services.ftp_service",
-        "peekOfCode": "class FtpService():\n    def __init__(self):\n        load_dotenv()\n        self.ftp_host = os.getenv(\"FTP_HOST\")\n        self.ftp_user = os.getenv(\"FTP_USER\")\n        self.ftp_pass = os.getenv(\"FTP_PASS\")\n        self.ftp_port = int(os.getenv(\"FTP_PORT\", 99))\n        self.timeout = 15\n        self.ftp = None\n    def connect(self):",
+        "peekOfCode": "class FtpService():\n    def __init__(self):\n        load_dotenv(override=True)\n        load_dotenv()\n        self.ftp_host = os.getenv(\"FTP_HOST\")\n        self.ftp_user = os.getenv(\"FTP_USER\")\n        self.ftp_pass = os.getenv(\"FTP_PASS\")\n        self.ftp_port = int(os.getenv(\"FTP_PORT\", 21))\n        self.ftp_host_ice = os.getenv(\"FTP_HOST_ICE\")\n        self.ftp_port_ice = int(os.getenv(\"FTP_PORT_ICE\", 99))",
         "detail": "app.services.ftp_service",
         "documentation": {}
     },
@@ -381,7 +457,7 @@
         "kind": 6,
         "importPath": "app.services.MongoStorageService",
         "description": "app.services.MongoStorageService",
-        "peekOfCode": "class MongoStorageService:\n    def __init__(self):\n        load_dotenv()\n        MONGO_HOST = os.getenv(\"MONGO_HOST\")         # Ejemplo: \"mongodb://localhost:27017\"\n        MONGO_DB = os.getenv(\"DATABASE_MONGO\")             # Ejemplo: \"mi_base\"\n        self.client = MongoClient(MONGO_HOST)\n        self.db = self.client[MONGO_DB]\n        self.collection = self.db[\"hv_ftp\"]\n        self.analisys_hv_collection = self.db[\"analisys_hv\"]\n    def save_document(self, nombre: str, texto: str):",
+        "peekOfCode": "class MongoStorageService:\n    def __init__(self):\n        load_dotenv()\n        MONGO_HOST = os.getenv(\"MONGO_HOST\")         # Ejemplo: \"mongodb://localhost:27017\"\n        MONGO_DB = os.getenv(\"DATABASE_MONGO\")             # Ejemplo: \"mi_base\"\n        self.client = MongoClient(MONGO_HOST)\n        self.db = self.client[MONGO_DB]\n        self.collection = self.db[\"hv_ftp\"]\n        self.analisys_hv_collection = self.db[\"analisys_hv\"]\n    def save_document(self, nombre: str, texto: str,origen:str):",
         "detail": "app.services.MongoStorageService",
         "documentation": {}
     },
@@ -395,11 +471,20 @@
         "documentation": {}
     },
     {
+        "label": "Sql_serverSql_server",
+        "kind": 6,
+        "importPath": "app.services.Sql_server",
+        "description": "app.services.Sql_server",
+        "peekOfCode": "class Sql_serverSql_server:\n    def __init__(self):\n        load_dotenv()\n        connection_string = os.getenv(\"SQLSERVER_CONNECTION_STRING\")\n        self.conn = pyodbc.connect(connection_string)\n        self.cursor = self.conn.cursor()\n    def get_credenciales(self):\n        try:\n            query = \"SELECT [User], [Password] FROM [KeyIceberg]\"\n            self.cursor.execute(query)",
+        "detail": "app.services.Sql_server",
+        "documentation": {}
+    },
+    {
         "label": "TextoService",
         "kind": 6,
         "importPath": "app.services.texto_service",
         "description": "app.services.texto_service",
-        "peekOfCode": "class TextoService:\n    def __init__(self):\n        self.ftp_service = FtpService()\n        self.mongo_service = MongoStorageService()\n        self.OpenAI_service = OpenAIServices()\n    def read_files(self):\n        resultados = []\n        self.ftp_service.connect()\n        try:\n            archivos = self.ftp_service.list_pdfs('/hv')",
+        "peekOfCode": "class TextoService:\n    def __init__(self):\n        self.ftp_service = FtpService()\n        self.mongo_service = MongoStorageService()\n        self.OpenAI_service = OpenAIServices()\n    def read_files(self):\n        resultados = []\n        self.ftp_service.connect()\n        try:\n            archivos = self.ftp_service.list_pdfs('/HV')",
         "detail": "app.services.texto_service",
         "documentation": {}
     },
@@ -408,7 +493,7 @@
         "kind": 5,
         "importPath": "app.main",
         "description": "app.main",
-        "peekOfCode": "app = FastAPI(\n    title=\"API de Análisis de Hojas de Vida\",\n    description=\"Conexión a MongoDB, FTP y análisis con OpenAI.\",\n    version=\"1.0.0\"\n)\napp.include_router(status_routes.router)",
+        "peekOfCode": "app = FastAPI(\n    title=\"API de Análisis de Hojas de Vida\",\n    description=\"Conexión a MongoDB, FTP y análisis con OpenAI.\",\n    version=\"1.0.0\"\n)\napp.include_router(status_routes.router)\n# @app.on_event(\"startup\")\n# async def iniciar_monitoreo_ftp():\n#     texto_service = TextoService()\n#     async def loop_ftp():",
         "detail": "app.main",
         "documentation": {}
     },

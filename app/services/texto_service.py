@@ -31,10 +31,14 @@ class TextoService:
                 partes = nombre_archivo.split('_')
                 origen = partes[-1] if len(partes) >= 3 else 'desconocido'
                 self.mongo_service.save_document(archivo, texto_extraido,origen)
+                
                 # Definir rutas origen y destino para mover el archivo
                 ruta_origen = f'/HV/{archivo}'
                 ruta_destino = f'/HV/Analizado/{archivo}'
                 self.ftp_service.move_Analizado(ruta_origen, ruta_destino)
+                
+                # 👇 Aquí copias al FTP ICE en /HV/
+                self.ftp_service.mover_y_copiar_a_ftp_destino(ruta_destino)
                 resultados.append({"archivo": archivo, "estado": "guardado"})
                 self.get_analisys_for_text_mongo()
         finally:
@@ -54,7 +58,6 @@ class TextoService:
         mongo_information = self.mongo_service.get_text_documents()
 
         for doc in mongo_information:
-            print(doc)
             # Obtener objeto diagnosis_IA de OpenAI
             diagnosis = self.OpenAI_service.get_completion(doc['texto'])
 

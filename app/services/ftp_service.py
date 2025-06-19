@@ -1,7 +1,7 @@
 from ftplib import FTP
 from dotenv import load_dotenv
+from app.services.Sql_server import Sql_serverSql_server
 import os
-
 
 class FtpService():
     def __init__(self):
@@ -11,6 +11,9 @@ class FtpService():
         self.ftp_user = os.getenv("FTP_USER")
         self.ftp_pass = os.getenv("FTP_PASS")
         self.ftp_port = int(os.getenv("FTP_PORT", 21))
+        
+        self.ftp_host_ice = os.getenv("FTP_HOST_ICE")
+        self.ftp_port_ice = int(os.getenv("FTP_PORT_ICE", 99))
         self.timeout = 15
         self.ftp = None
 
@@ -21,6 +24,15 @@ class FtpService():
         self.ftp.set_pasv(True)
         print(f"Conectado a {self.ftp_host}")
 
+    def connectICE(self):
+        sql =  Sql_serverSql_server()
+        cred = sql.get_credenciales()
+        self.ftp = FTP()
+        self.ftp.connect(host=self.ftp_host_ice, port=self.ftp_port_ice, timeout=self.timeout)
+        self.ftp.login(user=cred["User"], passwd=cred["Password"])
+        self.ftp.set_pasv(True)
+        print(f"Conectado a {self.ftp_host_ice}")
+        
     def list_files(self, directory: str = "/HV"):
         self.connect()
         self.ftp.cwd(directory)
@@ -45,3 +57,43 @@ class FtpService():
         if self.ftp:
             self.ftp.quit()
             self.ftp = None
+            
+    def mover_y_copiar_a_ftp_destino(self, ruta_ya_analizado):
+
+        try:
+
+            self.connect()
+            buffer = os.BytesIO()
+            self.ftp.retrbinary(f"RETR {ruta_ya_analizado}", buffer.write)
+            buffer.seek(0)
+            print(f"📥 Archivo descargado desde {ruta_ya_analizado}")
+
+            # 3. Conectarse al FTP ICE con las credenciales
+            self.connectICE()
+            # 4. Subir a /HV/ en el FTP ICE con el mismo nombre del archivo
+            nombre_archivo = os.path.basename(ruta_ya_analizado)
+            ruta_destino_ftp_ice = "/HV"
+
+            # Asegurar que el directorio /HV exista
+            try:
+                self.ftp.cwd(ruta_destino_ftp_ice)
+            except:
+                partes = ruta_destino_ftp_ice.strip('/').split('/')
+                actual = ""
+                for p in partes:
+                    actual += f"/{p}"
+                    try:
+                        self.ftp.mkd(actual)
+                    except:
+                        pass
+                self.ftp.cwd(ruta_destino_ftp_ice)
+
+            self.ftp.storbinary(f"STOR {nombre_archivo}", buffer)
+            print(f"✅ Archivo copiado al FTP ICE en {ruta_destino_ftp_ice}/{nombre_archivo}")
+
+        except Exception as e:
+            print(f"❌ Error en el proceso de copiar a FTP ICE: {e}")
+        finally:
+            self.disconnect()
+
+        
