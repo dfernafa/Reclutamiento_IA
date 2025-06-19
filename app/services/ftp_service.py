@@ -63,7 +63,8 @@ class FtpService():
         try:
 
             self.connect()
-            buffer = os.BytesIO()
+            from io import BytesIO
+            buffer = BytesIO()
             self.ftp.retrbinary(f"RETR {ruta_ya_analizado}", buffer.write)
             buffer.seek(0)
             print(f"📥 Archivo descargado desde {ruta_ya_analizado}")
