@@ -70,13 +70,15 @@ class OpenAIServices:
                 "aspectos_no_cumplidos": [
                     "Lista de requisitos que no se cumplen"
                 ],
-                "informacion Faltante": [
+                "informacion_Faltantes": [
                     "Lista de requisitos que hace falta y podría ser relevante para el cargo"
                 ],
                 "potencial_detectado": "Sí" | "No",
+                "Afinidad": "% De afinidad con el cargo",
                 "tipo_de_agente_sugerido": "Inbound" | "Outbound" | "Ambos" | "No aplica",
                 "observaciones_adicionales": "Cualquier comentario adicional relevante para la toma de decisión, como sugerencias de capacitación u observaciones actitudinales.",
-                "veredicto": "Llamar" | "No Llamar"
+                "veredicto": "Llamar" | "No Llamar",
+                "Fecha": "Dia que analizaste"
                 }}
 
                 ### Perfil requerido:

@@ -7,7 +7,7 @@ import fitz  # PyMuPDF
 import json
 import os
 import time  # <-- No olvides importar esto
-
+import datetime
 
 class TextoService:
     def __init__(self):
@@ -60,11 +60,13 @@ class TextoService:
         for doc in mongo_information:
             # Obtener objeto diagnosis_IA de OpenAI
             diagnosis = self.OpenAI_service.get_completion(doc['texto'])
-
             # Extraer solo resultado_json
             resultado_json = diagnosis.resultado_json
 
+
             if resultado_json:
+                resultado_json['Documento'] = doc['nombre']
+                resultado_json['Fecha']= datetime.datetime.now()
                 self.mongo_service.marcar_reclutaia_como_true(doc['_id'])
                 self.mongo_service.save_analisys_hv(resultado_json)
                 resultados.append(resultado_json)
